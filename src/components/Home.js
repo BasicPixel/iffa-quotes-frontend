@@ -21,10 +21,10 @@ function Home() {
         )}
         {response && (
           <div>
-            <p id="content" className="text-2xl text-center text-slate-700">
+            <p id="content" className="text-xl text-center text-slate-700">
               "{response.content}"
             </p>
-            <p id="source" className="text-lg text-center text-slate-600">
+            <p id="source" className="text-center text-slate-600">
               - {response.source}
             </p>
           </div>
