@@ -21,7 +21,10 @@ function Home() {
         )}
         {response && (
           <div className="py-16">
-            <p id="content" className="text-xl text-center text-slate-700">
+            <p
+              id="content"
+              className="text-xl text-center text-slate-700 whitespace-pre-wrap"
+            >
               "{response.content}"
             </p>
             <p id="source" className="text-center text-slate-600">
