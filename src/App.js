@@ -8,7 +8,7 @@ import NotFound from "./components/NotFound";
 function App() {
   return (
     <BrowserRouter>
-      <div className="container md:w-2/3 lg:w-1/2 bg-slate-100">
+      <div className="container px-2 md:p-0 md:w-2/3 lg:w-1/2 bg-slate-100">
         <Navbar />
         <Routes>
           <Route index element={<Home />} />

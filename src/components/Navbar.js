@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="w-full mb-2 bg-slate-800 text-slate-200 p-2 rounded-b static flex items-center gap-2">
+    <div className="w-full mb-2 bg-slate-800 text-slate-200 p-2 rounded-b flex items-center gap-2">
       <Link to="/" className="text-2xl">
         ولْيَسْتَعْفِف
       </Link>
