@@ -37,15 +37,15 @@ const AddQuote = () => {
         <label className="text-lg" htmlFor="content">
           محتوى / نص المقولة
         </label>
-        <input
+        <textarea
           type="text"
           id="content"
           value={content}
           onChange={(e) => {
             setContent(e.target.value);
           }}
-          className="w-full rounded p-2 bg-slate-200 my-2 focus:outline-slate-800"
-        />
+          className="w-full min-h-[25vh] rounded p-2 bg-slate-200 my-2 focus:outline-slate-800"
+        ></textarea>
         <label className="text-lg" htmlFor="source">
           المصدر / القائل
         </label>
