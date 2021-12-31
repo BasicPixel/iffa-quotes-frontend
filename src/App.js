@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import AddQuote from "./components/AddQuote";
 import About from "./components/About";
 import NotFound from "./components/NotFound";
+import AppDownload from "./components/AppDownload";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/add" element={<AddQuote />} />
           <Route path="/about" element={<About />} />
+          <Route path="/android" element={<AppDownload />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

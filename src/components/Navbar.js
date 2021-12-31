@@ -13,6 +13,12 @@ function Navbar() {
         أضف مقولة
       </Link>
       <Link
+        to="/android"
+        className="hover:bg-slate-600 rounded hover:transition-all duration-200 p-1"
+      >
+        تحميل التطبيق
+      </Link>
+      <Link
         to="/about"
         className="hover:bg-slate-600 rounded hover:transition-all duration-200 p-1"
       >
