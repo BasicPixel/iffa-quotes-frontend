@@ -21,7 +21,11 @@ const AddQuote = () => {
       body: JSON.stringify({ content: content, source: source }),
     })
       .then((res) => {
-        if (res.ok) setFetchState({ ...fetchState, success: true });
+        if (res.ok) {
+          setFetchState({ ...fetchState, success: true });
+          setContent("");
+          setSource("");
+        }
       })
       .catch((err) => setFetchState({ ...fetchState, error: err }));
   };
