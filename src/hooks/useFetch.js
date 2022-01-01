@@ -20,7 +20,19 @@ const useFetch = (url, options) => {
     fetchData();
   }, [options, url]);
 
-  return { response, loading, error };
+  const refetch = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch(url, options);
+      const json = await res.json();
+      setResponse(json);
+      setLoading(false);
+    } catch (error) {
+      setError(error);
+    }
+  };
+
+  return { response, loading, error, refetch };
 };
 
 export default useFetch;

@@ -1,7 +1,7 @@
 import useFetch from "../hooks/useFetch";
 
 function Home() {
-  const { response, loading, error } = useFetch(
+  const { response, loading, error, refetch } = useFetch(
     "https://iffa-quotes.herokuapp.com/random"
   );
 
@@ -32,6 +32,14 @@ function Home() {
             </p>
           </div>
         )}
+        <div className="w-full text-center">
+          <button
+            onClick={refetch}
+            className="p-2 my-2 bg-slate-800 hover:bg-slate-600 text-slate-200 hover:transition-all duration-200 rounded"
+          >
+            مقولة جديدة
+          </button>
+        </div>
       </div>
     </div>
   );
