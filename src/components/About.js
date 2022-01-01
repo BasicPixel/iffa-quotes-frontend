@@ -17,7 +17,7 @@ const About = () => {
             الله تعالى.
           </li>
           <li>
-            المساهمة في تصميم وتطوير الموقع لمن لديه الخبرة التقنية،{" "}
+            المساهمة في تصميم وتطوير الموقع لمن لديه المعرفة التقنية،{" "}
             <a
               href="https://github.com/BasicPixel/iffa-quotes-frontend"
               target="_blank"
@@ -37,6 +37,9 @@ const About = () => {
         <a href="https://t.me/qudah" target="_blank" rel="noreferrer">
           أسامة القضاة
         </a>
+      </p>
+      <p className="text-slate-600 text-center">
+        التطبيق تصميم وإنشاء: علي الكساسبة
       </p>
     </div>
   );
